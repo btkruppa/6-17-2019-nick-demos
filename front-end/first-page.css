@@ -1,0 +1,29 @@
+/* not good practice to style all elements based off tag */
+p {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px brown dotted;
+}
+
+
+/* # is used to target elements by the id attribute */
+#donkey-image {
+  width: 200px;
+}
+
+ /* style tr inside of tbody inside of the shrek table only and only when hovered*/
+#shrek-table tbody tr:hover {
+  box-shadow: inset 0px 0px 5px 1px purple;
+  cursor: pointer;
+}
+
+/* used to target elements by class */
+.three-d-form {
+  font-size: 2em;
+  box-shadow: 2px 2px 5px 1px purple;
+}
+
+/* used to target elements by class */
+.three-d-form {
+  box-shadow: 2px 2px 5px 1px orange;
+}
