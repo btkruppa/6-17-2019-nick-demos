@@ -55,7 +55,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <table class="table">
+        <table class="table" id="shrek-table">
           <thead class="thead-dark">
             <tr>
               <th scope="col">Character</th>
@@ -82,6 +82,22 @@
           </tbody>
         </table>
       </div>
+
+      <form onsubmit="addCharacterFromForm(event)">
+        <div class="form-group">
+          <label for="character-name-input">Character Name:</label>
+          <input type="text" class="form-control" id="character-name-input" placeholder="Shrek">
+        </div>
+        <div class="form-group">
+          <label for="character-actor-input">Character Actor:</label>
+          <input type="text" class="form-control" id="character-actor-input" placeholder="Shrek">
+        </div>
+        <div class="form-group">
+          <label for="character-description-input">Character Description:</label>
+          <textarea class="form-control" id="character-description-input" rows="3"></textarea>
+        </div>
+        <button class="btn btn-success" type="submit">Add Character</button>
+      </form>
     </div>
   </div>
 
@@ -94,4 +110,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
   crossorigin="anonymous"></script>
 
+<script src="shrek-table.js"></script>
 </html>
